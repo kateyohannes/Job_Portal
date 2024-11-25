@@ -1,4 +1,7 @@
 {
+    "Metadata": {
+        "title": "Doctor Tibebu"
+    },
     "TopBar": {
         "opening_hours": "Opening Hours: 8.00 AM - 5.00 PM (Mon - Sun)",
         "phone": "Phone"
@@ -17,26 +20,32 @@
     "Hero": {
         "hero_title": "Wellcome to",
         "hero_subtitle": "Doctor Tibebu",
-        "hero_describtion": "Welcome to Doctor Tibebu Clinic, where your health and well-being are our top priorities. We provide compassionate care, state-of-the-art treatments, and personalized services to help you achieve your healthiest self. Your journey to better health starts here."
+        "hero_description": "Welcome to Doctor Tibebu Clinic, where your health and well-being are our top priorities. We provide compassionate care, state-of-the-art treatments, and personalized services to help you achieve your healthiest self. Your journey to better health starts here."
     },
     "Services": {
-        "ServiceList": {
-            "service_one": {
-                "service_name": "Psychological",
-                "service_description": "We offer expert mental health care and support to help you navigate life’s challenges and maintain emotional well-being."
-            },
-            "service_two": {
-                "service_name": "Cardiology",
-                "service_description": "Our cardiology services ensure the best care for your heart, offering diagnosis and treatment for all heart conditions."
-            },
-            "service_three": {
-                "service_name": "Gynecology",
-                "service_description": "Comprehensive women’s health services, from routine checkups to specialized treatments, delivered with care and expertise."
-            },
-            "service_four": {
-                "service_name": "Pediatrician",
-                "service_description": "Providing expert care for children, ensuring their growth and development are nurtured every step of the way."
-            }
+        "service_one": {
+            "service_name": "Psychological",
+            "service_description": "We offer expert mental health care and support to help you navigate life’s challenges and maintain emotional well-being.",
+            "service_image": "https://kamleshyadav.com/html/healthcare/bootstrap5/healthcare/assets/images/service-iocn1.png",
+            "service_bg": "bg-primary"
+        },
+        "service_two": {
+            "service_name": "Cardiology",
+            "service_description": "Our cardiology services ensure the best care for your heart, offering diagnosis and treatment for all heart conditions.",
+            "service_image": "https://kamleshyadav.com/html/healthcare/bootstrap5/healthcare/assets/images/service-iocn2.png",
+            "service_bg": "bg-orange-600"
+        },
+        "service_three": {
+            "service_name": "Gynecology",
+            "service_description": "Comprehensive women’s health services, from routine checkups to specialized treatments, delivered with care and expertise.",
+            "service_image": "https://kamleshyadav.com/html/healthcare/bootstrap5/healthcare/assets/images/service-iocn3.png",
+            "service_bg": "bg-blue-500"
+        },
+        "service_four": {
+            "service_name": "Pediatrician",
+            "service_description": "Providing expert care for children, ensuring their growth and development are nurtured every step of the way.",
+            "service_image": "https://kamleshyadav.com/html/healthcare/bootstrap5/healthcare/assets/images/service-iocn4.png",
+            "service_bg": "bg-yellow-400"
         }
     },
     "About": {

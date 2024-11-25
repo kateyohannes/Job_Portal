@@ -1,4 +1,7 @@
 {
+    "Metadata": {
+        "title": "ሀኪም ጥበቡ"
+    },
     "TopBar": {
         "opening_hours": "የመክፈቻ ሰዓታት፡- ከጠዋቱ 2፡00 - 11፡00 (ሰኞ - እሑድ)",
         "phone": "ስልክ"
@@ -17,26 +20,31 @@
     "Hero": {
         "hero_title": "እንኳን ደህና መጣህ",
         "hero_subtitle": "ሀኪም ጥበቡ",
-        "hero_describtion": "ወደ ሀኪም ጥበቡ ክሊኒክ እንኳን በደህና መጡ፣ ጤናዎ እና ደህንነትዎ ቅድሚያ የምንሰጣቸው ጉዳዮች ናቸው። ርህራሄ ያለው እንክብካቤ፣ ዘመናዊ ህክምና እና ለግል የተበጁ አገልግሎቶችን እናቀርባለን። ወደ ተሻለ ጤና ጉዞዎ እዚህ ይጀምራል።"
+        "hero_description": "ወደ ሀኪም ጥበቡ ክሊኒክ እንኳን በደህና መጡ፣ ጤናዎ እና ደህንነትዎ ቅድሚያ የምንሰጣቸው ጉዳዮች ናቸው። ርህራሄ ያለው እንክብካቤ፣ ዘመናዊ ህክምና እና ለግል የተበጁ አገልግሎቶችን እናቀርባለን። ወደ ተሻለ ጤና ጉዞዎ እዚህ ይጀምራል።"
     },
     "Services": {
-        "service_list": {
-            "service_one": {
-                "service_name": "ሳይኮሎጂካል",
-                "service_description": "የህይወት ፈተናዎችን ለማሰስ እና ስሜታዊ ደህንነትን ለመጠበቅ እንዲረዳዎ የባለሙያ የአእምሮ ጤና እንክብካቤ እና ድጋፍ እንሰጣለን።"
-            },
-            "service_two": {
-                "service_name": "ካርዲዮሎጂ",
-                "service_description": "የካርዲዮሎጂ አገልግሎታችን ለልብዎ ምርጥ እንክብካቤን ያረጋግጣሉ ፣ ይህም ለሁሉም የልብ ችግሮች ምርመራ እና ህክምና ይሰጣል ።"
-            },
-            "service_three": {
-                "service_name": "የማህፀን ህክምና",
-                "service_description": "ሁሉን አቀፍ የሴቶች ጤና አገልግሎቶች፣ ከመደበኛ ፍተሻ እስከ ልዩ ህክምናዎች፣ በጥንቃቄ እና በሙያ የተሰጡ።"
-            },
-            "service_four": {
-                "service_name": "የሕፃናት ሐኪም",
-                "service_description": "Providing expert care for children, ensuring their growth and development are nurtured every step of the way."
-            }
+        "service_one": {
+            "service_name": "ሳይኮሎጂካል",
+            "service_description": "የህይወት ፈተናዎችን ለማሰስ እና ስሜታዊ ደህንነትን ለመጠበቅ እንዲረዳዎ የባለሙያ የአእምሮ ጤና እንክብካቤ እና ድጋፍ እንሰጣለን።",
+            "service_image": "https://kamleshyadav.com/html/healthcare/bootstrap5/healthcare/assets/images/service-iocn1.png",
+            "service_bg": "bg-primary"
+        },
+        "service_two": {
+            "service_name": "ካርዲዮሎጂ",
+            "service_description": "የካርዲዮሎጂ አገልግሎታችን ለልብዎ ምርጥ እንክብካቤን ያረጋግጣሉ ፣ ይህም ለሁሉም የልብ ችግሮች ምርመራ እና ህክምና ይሰጣል ።",
+            "service_image": "https://kamleshyadav.com/html/healthcare/bootstrap5/healthcare/assets/images/service-iocn2.png",          "service_bg": "bg-orange-600"
+        },
+        "service_three": {
+            "service_name": "የማህፀን ህክምና",
+            "service_description": "ሁሉን አቀፍ የሴቶች ጤና አገልግሎቶች፣ ከመደበኛ ፍተሻ እስከ ልዩ ህክምናዎች፣ በጥንቃቄ እና በሙያ የተሰጡ።",
+            "service_image": "https://kamleshyadav.com/html/healthcare/bootstrap5/healthcare/assets/images/service-iocn3.png",
+            "service_bg": "bg-blue-500"
+        },
+        "service_four": {
+            "service_name": "የሕፃናት ሐኪም",
+            "service_description": "ለህፃናት የባለሙያ እንክብካቤ መስጠት, እድገታቸው እና እድገታቸው በእያንዳንዱ ደረጃ እንዲዳብር ማድረግ.",
+            "service_image": "https://kamleshyadav.com/html/healthcare/bootstrap5/healthcare/assets/images/service-iocn4.png",
+            "service_bg": "bg-yellow-400"
         }
     },
     "About": {
@@ -125,12 +133,13 @@
             "contact_address": "አዲስ አበባ, ካራ "
         },
         "link": {
-            "home": "ቤት",
-            "about": "ስለ እኛ",
-            "service": "አገልግሎት",
-            "teams": "ቡድኖች",
-            "feedback": "ግብረ መልስ",
-            "contact": "ተገናኝ"
+            "link_title": "title",
+            "link_home": "ቤት",
+            "link_about": "ስለ እኛ",
+            "link_service": "አገልግሎት",
+            "link_teams": "ቡድኖች",
+            "link_feedback": "ግብረ መልስ",
+            "link_contact": "ተገናኝ"
         }
     },
     "Index":{
