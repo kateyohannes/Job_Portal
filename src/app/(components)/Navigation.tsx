@@ -12,6 +12,7 @@ import { useTranslations } from "next-intl"
 const Nav = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const t = useTranslations("TopBar")
+  const n = useTranslations("NavigationBar")
   const menuItems = ["Home", "About", "Services", "teams", "Contact"];
 
   return (
@@ -31,7 +32,7 @@ const Nav = () => {
             <FaPhoneAlt size={16}/>
           </div>
           <p className="text-white  font-bold">
-            {t('phone')}: +(0321) 752 8659
+            {t('phone')}: +(251) 917040506
           </p>
         </div>
       </div>
@@ -69,7 +70,7 @@ const Nav = () => {
             className="w-[70px] h-[35px]"
             alt="Logo"
           />
-          <p className="md:text-2xl text-xl font-bold">Dr. Tibebu</p>
+          <p className="md:text-2xl text-xl font-bold">{n("title")}</p>
         </div>
 
         {/* Desktop Links */}
