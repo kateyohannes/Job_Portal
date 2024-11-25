@@ -1,18 +1,29 @@
 import "./globals.css";
 import { NextIntlClientProvider } from "next-intl"
 import { getMessages } from "next-intl/server";
+import {getTranslations} from 'next-intl/server';
 
 interface RootLayoutProps {
   children: React.ReactNode,
-  params: {
+  params: Promise<{
     locale: string;
-  }
+  }>
 }
 
+ 
+export async function generateMetadata({
+  params: {locale}
+} : any) {
+  const t = await getTranslations({locale, namespace: 'Metadata'});
+
+  return {
+    title: t('title')
+  };
+}
 export default async function LocalLayout({
   children,
   params: { locale }
-}: Readonly<RootLayoutProps>) {
+}: any) {
   const messages = await getMessages()
   return (
     <html lang={locale}>

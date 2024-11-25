@@ -1,13 +1,25 @@
-import { useTranslations } from "next-intl";
-import Nav from "../(components)/Navigation";
 
+
+import Hero from "../(components)/Hero";
+import About from "../(components)/Aboutus";
+import Footer from "../(components)/Footer";
+import Nav from "../(components)/Navigation";
+import Services from "../(components)/Services";
 
 export default function RootPage() {
-  const t = useTranslations("Index")
   return (
     <div>
       <Nav />
-      {t('title')}
+      <div id="home">
+        <Hero />
+      </div>
+      <div id="service">
+        <Services />
+      </div>
+      <div id="about">
+        <About />
+      </div>
+      <Footer />
     </div>
   );
 }
