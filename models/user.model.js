@@ -3,10 +3,10 @@
 const mongoose = require("mongoose")
 
 const userSchema = new mongoose.Schema({
-    username: { type: String, required: true },
+    username: { type: String },
     password: { 
-        salt: {type: String, required : true},
-        current_password: { type: String, required: true }
+        salt: {type: String },
+        current_password: { type: String }
     },
     profile: {
         fullname: {
@@ -22,18 +22,20 @@ const userSchema = new mongoose.Schema({
             wereda: { type: String },
             zon: { type: String }
         },
-        tel: [{
-            code : { type: String },
-            number: { type: String }
-        }],
+
         email: { type: String },
+        tel: {
+            code : { type: String },
+            number: { type: String },
+            is_verfied: { type: Boolean, default: false },
+        },
         links: [{ 
             lable: { type: String },
             url: { type: String } 
         }],
     },
     file: {
-        cv: { type: String, required: true },
+        cv: { type: String },
         resume: { type: String },
     }
 },{
