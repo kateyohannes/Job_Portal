@@ -7,7 +7,7 @@ module.exports = async function(fastify, options){
         url: "",
         method: "GET",
         schema: {
-            tage: ["User"],
+            tags: ["User"],
             response: {
                 200: Type.Any()
             }
@@ -27,7 +27,7 @@ module.exports = async function(fastify, options){
         url: "/:id",
         method: "GET",
         schema: {
-            tage: ["User"],
+            tags: ["User"],
             response: {
                 200: Type.Any()
             }
@@ -41,6 +41,23 @@ module.exports = async function(fastify, options){
                 
             }catch(err){
                 reply.code(500).send(err);
+            }
+        }
+    });
+
+    fastify.route({
+        url: "/deleteAll",
+        method: "DELETE",
+        schema: {
+            tags: ["User"]
+        },
+        handler: async (request, reply)=>{
+            try{
+                const { UserModel } = fastify.db.models;
+                const data = await UserModel.deleteMany()
+                reply.code(200).send(data)
+            }catch(err){
+                reply.code(500).send(err)
             }
         }
     })
