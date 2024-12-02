@@ -8,6 +8,7 @@ const {
     ApplyModel
 } = require("../models")
 
+
 const models = {  
     UserModel,
     VacancyModel,
