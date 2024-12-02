@@ -12,6 +12,9 @@ const options = {
     PORT: Type.String(),
     URI: Type.String(),
     JWT_SECRET: Type.String(),
+    NODE_ENV: Type.String({
+      default: "dev"
+    })
   })
 }
 
