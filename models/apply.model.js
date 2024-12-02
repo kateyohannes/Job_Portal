@@ -15,6 +15,9 @@ const applySchema = new mongoose.Schema({
     },
     cover_letter: { type: String },
     protfolio: [{ type: String }],
+    
+    cv: { type: String },
+    resume: { type: String },
     // rejected, accepted, onhold
     is_viewed: { type : Boolean, default: false },
     short_listed: { type: Boolean, default: false },

@@ -3,11 +3,11 @@
 const mongoose = require("mongoose")
 
 const userSchema = new mongoose.Schema({
-    username: { type: String },
-    password: { 
-        salt: {type: String },
-        current_password: { type: String }
-    },
+    tel: [{
+        number: { type: String },
+        is_verfied: { type: Boolean, default: false },
+        is_primary: { type: Boolean, default: false }
+    }],
     profile: {
         fullname: {
             firstname: { type: String },
@@ -23,20 +23,14 @@ const userSchema = new mongoose.Schema({
             zon: { type: String }
         },
 
-        email: { type: String },
-        tel: {
-            code : { type: String },
-            number: { type: String },
-            is_verfied: { type: Boolean, default: false },
+        email: { 
+            address : { type: String },
+            is_verfied: { type: Boolean }
         },
         links: [{ 
             lable: { type: String },
             url: { type: String } 
         }],
-    },
-    file: {
-        cv: { type: String },
-        resume: { type: String },
     }
 },{
     timestamps: true
