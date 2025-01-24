@@ -1,0 +1,29 @@
+{
+  "name": "job_portal",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@fastify/auth": "^5.0.2",
+    "@fastify/caching": "^9.0.3",
+    "@fastify/compress": "^8.0.1",
+    "@fastify/cookie": "^11.0.2",
+    "@fastify/cors": "^10.0.2",
+    "@fastify/csrf-protection": "^7.0.2",
+    "@fastify/env": "^5.0.2",
+    "@fastify/etag": "^6.0.3",
+    "@fastify/jwt": "^9.0.3",
+    "@fastify/mongodb": "^9.0.2",
+    "@fastify/rate-limit": "^10.2.2",
+    "@fastify/redis": "^7.0.2",
+    "@fastify/routes": "^6.0.2",
+    "@fastify/websocket": "^11.0.2",
+    "fastify": "^5.2.1"
+  }
+}
