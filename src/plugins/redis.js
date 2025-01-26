@@ -1,4 +1,4 @@
-
+'use strict';
 const fp = require('fastify-plugin')
 
 const redis = async (fastify, options)=>{
