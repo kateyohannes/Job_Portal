@@ -2,6 +2,7 @@
   "name": "job_portal",
   "version": "1.0.0",
   "main": "./src/server.js",
+  "type": "commonjs",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node ./src/server.js",
@@ -27,7 +28,8 @@
     "@fastify/redis": "^7.0.2",
     "@fastify/routes": "^6.0.2",
     "@fastify/websocket": "^11.0.2",
-    "fastify": "^5.2.1"
+    "fastify": "^5.2.1",
+    "fastify-plugin": "^5.0.1"
   },
   "devDependencies": {
     "nodemon": "^3.1.9"
