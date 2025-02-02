@@ -10,7 +10,6 @@ const fastify = require('fastify')({
 //     methods: ['GET', 'POST', 'PUT', 'DELETE']
 // });
 
-// fastify.register(require('@fastify/etag'))
 
 const __start__ = async ()=>{
     try{
