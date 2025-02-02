@@ -7,4 +7,4 @@ const redis = async (fastify, options)=>{
     })
 }
 
-module.exports = fp(redis)
+// module.exports = fp(redis)
